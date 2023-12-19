@@ -10,7 +10,7 @@
 
 //- Should have a corresponding opening bracket of the same type 
 
-function isValid(s){
+function hasBalancedBrackets(s){
     const stack = [];
 
     for (let i = 0; i < s.length; i += 1) {
@@ -35,7 +35,7 @@ function isValid(s){
 const s = "({[]})"
 
 
-console.log(isValid(s));
+console.log(hasBalancedBrackets(s));
 
 //Problem 2
 //There are n people in a line waiting to purchase tickets, with the 0th person at the front and the (n - 1)th person at the back. 
